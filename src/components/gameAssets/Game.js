@@ -4,7 +4,9 @@ import styled from 'styled-components'
 import { v4 as uuidv4 } from 'uuid'
 
 const StyledGrid = styled.div`
-
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 3rem;
 `;
 
 const Cards = () => {
@@ -18,6 +20,26 @@ const Cards = () => {
       id: uuidv4(),
       imgSrc: '#',
       name: 'Randy How'
+    },
+    {
+      id: uuidv4(),
+      imgSrc: '#',
+      name: 'Silvia Tan'
+    },
+    {
+      id: uuidv4(),
+      imgSrc: '#',
+      name: 'Jesus Harlim'
+    },
+    {
+      id: uuidv4(),
+      imgSrc: '#',
+      name: 'Aston Tay'
+    },
+    {
+      id: uuidv4(),
+      imgSrc: '#',
+      name: 'Colin Soh'
     },
   ])
 
