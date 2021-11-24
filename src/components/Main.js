@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from './gameAssets/Cards';
+import Game from './gameAssets/Game';
 import styled from 'styled-components'
 
 const StyledMain = styled.div`
@@ -9,7 +9,7 @@ const StyledMain = styled.div`
 const Main = () => {
   return (
     <StyledMain>
-      <Cards />
+      <Game />
     </StyledMain>
   )
 }
