@@ -4,6 +4,8 @@ import styled from 'styled-components'
 
 const StyledMain = styled.div`
   color: white;
+  padding: 20px;
+  margin-top: 20px;
 `;
 
 const Main = () => {
