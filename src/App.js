@@ -31,6 +31,7 @@ const App = () => {
     } else if (deck === 'f1') {
       setCards(F1Drivers);
     }
+    handleStoreReset();
   }, [deck])
 
   const handleChangeDeck = (e) => {
