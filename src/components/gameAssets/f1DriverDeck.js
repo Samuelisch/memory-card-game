@@ -3,7 +3,6 @@ import { v4 as uuidv4 } from 'uuid'
 function importAll(r) {
   let images = {};
   r.keys().map((item, index) => images[item.replace('./', '')] = r(item));
-  console.log(Object.keys(images))
   return images;
 }
 
