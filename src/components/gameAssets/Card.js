@@ -2,31 +2,50 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledCard = styled.div`
-  width: 150px;
-  height: 200px;
-  border: 1px solid red;
+  width: 210px;
+  height: 384px;
+  border: 5px solid rgb(0, 200, 220);
   border-radius: 5px;
+  margin: 10px;
+  overflow: hidden;
+  background: rgb(0, 200, 220);
+  text-align: center;
 
   .imageContainer {
-    height: 70%;
-    border-bottom: 1px solid green;
+    height: 80%;
+    border-bottom: 2px solid green;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2rem;
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+  }
+
+  &:hover {
+    box-shadow: 1px 2px 3px 3px rgb(250, 250, 250);
+  }
+
+  &:active {
+    box-shadow: none;
   }
 `;
 
-const Card = ({ imgSrc, name }) => {
+const Card = ({ id, imgSrc, name, cardClick }) => {
   return (
-    <StyledCard>
+    <StyledCard onClick={() => cardClick(id)}>
       <div className="imageContainer">
-        <img src="#" alt="template" />
+        <img src={imgSrc.default} alt="card" />
       </div>
-      <p className="name">{name}</p>
+      <div className="nameContainer">
+        <p className="name">{name}</p>
+      </div>
     </StyledCard>
   )
 }
