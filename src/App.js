@@ -22,6 +22,10 @@ const App = () => {
   const [deck, setDeck] = useState('yugioh')
 
   useEffect(() => {
+    document.title = "Memory Card Game";  
+  }, []);
+
+  useEffect(() => {
     if (deck === 'yugioh') {
       setCards(YuGiOhDeck);
     } else if (deck === 'f1') {
