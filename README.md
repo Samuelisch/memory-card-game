@@ -6,11 +6,11 @@ A simple card game based on memory, created with ReactJS.
 
 Live implenetation built and accessible with [GitHub Pages](https://samuelisch.github.io/memory-card-game/).
 
-## Motivation
+### Motivation
 
 In the process of learning lifecycle changes, and state hooks, I want to get more familiar with **useState** and **useEffect**, to work with functional components. There was some confusion with useEffect, but [Sebastian Weber's post on useEffect](https://blog.logrocket.com/guide-to-react-useeffect-hook/) cleared a lot of it up for me.
 
-## Gameplay
+### Gameplay
 
 This memory card game relies on the user's... you guessed it, memory! There are currently two decks for the user to choose from:
 - YuGiOh Card Deck
